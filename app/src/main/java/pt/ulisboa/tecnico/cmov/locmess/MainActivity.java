@@ -8,8 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnMessages;
-    Button btnProfile;
+    public Button btnMessages;
+    public Button btnProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnMessages = (Button) findViewById(R.id.btnMessages);
+        btnProfile = (Button) findViewById(R.id.btnProfile);
 
         btnMessages.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
@@ -25,9 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnProfile = (Button) findViewById(R.id.btnProfile);
-
-        btnMessages.setOnClickListener(new View.OnClickListener() {
+        btnProfile.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);

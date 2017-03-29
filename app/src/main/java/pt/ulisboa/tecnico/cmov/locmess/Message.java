@@ -7,19 +7,28 @@ package pt.ulisboa.tecnico.cmov.locmess;
 import java.util.ArrayList;
 
 public class Message {
-    public String name;
-    public String hometown;
+    private String _name;
+    private String _location;
+    private String  _message;
 
-    public Message(String name, String hometown) {
-        this.name = name;
-        this.hometown = hometown;
+    public Message() {}
+
+    public String get_name() {
+        return _name;
     }
-
-    public static ArrayList<Message> getUsers() {
-        ArrayList<Message> users = new ArrayList<Message>();
-        users.add(new Message("Harry", "San Diego"));
-        users.add(new Message("Marla", "San Francisco"));
-        users.add(new Message("Sarah", "San Marco"));
-        return users;
+    public void set_name(String _name) {
+        this._name = _name;
+    }
+    public String get_location() {
+        return _location;
+    }
+    public void set_location(String _location) {
+        this._location = _location;
+    }
+    public String get_message() {
+        return _message;
+    }
+    public void set_message(String _message) {
+        this._message = _message;
     }
 }

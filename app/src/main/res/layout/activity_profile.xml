@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="ulisboa.tecnico.locmess.ProfileActivity">
+    tools:context="pt.ulisboa.tecnico.cmov.locmess.ProfileActivity">
 
 
     <LinearLayout
